@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">XPE Ciclo de vida</string>
+    <string name="rotulo_botao_main">Nova tela</string>
 </resources>
