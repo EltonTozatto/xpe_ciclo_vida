@@ -6,14 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".NovaActivity">
 
-    <Button
-        android:id="@+id/button2"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnExibir"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginHorizontal="@dimen/margem_padrao"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/rotulo_botao_exibir"
+        app:layout_constraintBottom_toTopOf="@id/btnVoltar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margem_padrao"
+        android:text="@string/rotulo_botao_voltar"
+        android:visibility="gone"
+        app:icon="@drawable/baseline_arrow_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExibir" />
 </androidx.constraintlayout.widget.ConstraintLayout>
